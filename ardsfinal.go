@@ -671,18 +671,16 @@ func Decryption() {
     b1++
 }
 defer db.Close()
+ defer db.Close()
+   
 }
 
 
-func main() {
-
-    
+func main() {   
     rand.Seed(time.Now().UnixNano())
     GetData()
     Encryption()
     Analysis()
-    Decryption()
-    
-    
+    Decryption()   
 }
 Defined on line 677
